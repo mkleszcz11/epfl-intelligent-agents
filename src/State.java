@@ -40,7 +40,8 @@ public class State {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
         State myObject = (State) obj;
-        return this.city.equals(myObject.getCity()) && this.destination.equals(myObject.getDestination());
+        return this.city.equals(myObject.getCity()) &&
+                ((this.destination == null && myObject.destination == null) || this.destination.equals(myObject.getDestination()));
     }
 
     @Override
