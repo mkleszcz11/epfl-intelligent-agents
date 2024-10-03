@@ -27,7 +27,7 @@ public class ReactiveTemplate implements ReactiveBehavior {
 	private Map<City, List<City>> neighborsMap;     // Neighboring cities map
 	private Map<State, Double> stateValues;         // Value of each state
 
-	private static final double EPSILON = 0.01;     // Convergence threshold for Bellman update
+	private static final double EPSILON = 10e-9;     // Convergence threshold for Bellman update
 
 	// State class to represent whether we are in a city with or without a package
 	private class State {

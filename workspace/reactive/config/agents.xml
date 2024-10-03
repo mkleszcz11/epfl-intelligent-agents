@@ -6,7 +6,7 @@
 	<!-- #### REACTIVE AGENTS ### -->
 	<agent name="reactive-random">
 		<set class-path="out/production/reactive"/>
-		<set class-name="template.ReactiveTemplate"/>
+		<set class-name="template.ReactiveTemplate_QValue"/>
 		<set discount-factor=".85"/>
 	</agent>
 	
